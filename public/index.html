@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">HODLINFO</div>
+        <div class="controls">
+            <select id="currency">
+                <option value="INR">INR</option>
+            </select>
+            <select id="crypto">
+                <option value="BTC">BTC</option>
+            </select>
+            <button id="buyBtn">BUY BTC</button>
+        </div>
+        <div class="right-controls">
+            <div class="countdown">60</div>
+            <button id="telegram-btn">Connect Telegram</button>
+            <button id="theme-toggle">🌓</button>
+        </div>
+    </header>
+    <main>
+        <div class="price-info">
+            <div class="price-change">
+                <span>5 Mins</span>
+                <span id="fiveMin">0.76%</span>
+            </div>
+            <div class="price-change">
+                <span>1 Hour</span>
+                <span id="oneHour">1.67%</span>
+            </div>
+            <div class="current-price">₹ <span id="bestPrice">50,11,367</span></div>
+            <div class="price-change">
+                <span>1 Day</span>
+                <span id="oneDay">7.64%</span>
+            </div>
+            <div class="price-change">
+                <span>7 Days</span>
+                <span id="sevenDays">13.63%</span>
+            </div>
+        </div>
+        <div class="average-header">
+            <h2>Best Price to Trade</h2>
+            <p>Average BTC/INR net price including commission</p>
+        </div>
+        <table id="tickerTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Difference</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

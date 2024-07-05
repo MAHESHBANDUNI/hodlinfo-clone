@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #191d28;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-theme {
+    background-color: #ffffff;
+    color: #191d28;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #191d28;
+}
+
+.light-theme header {
+    background-color: #f1f2f6;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3dc6c1;
+}
+
+.controls select, .controls button, .right-controls button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #2e3241;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+.light-theme .controls select,
+.light-theme .controls button,
+.light-theme .right-controls button {
+    background-color: #e0e3eb;
+    color: #191d28;
+}
+
+.right-controls {
+    display: flex;
+    align-items: center;
+}
+
+.countdown {
+    background-color: #3dc6c1;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.current-price {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.average-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.average-header h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.average-header p {
+    font-size: 14px;
+    color: #999;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #2e3241;
+}
+
+.light-theme th,
+.light-theme td {
+    border-bottom: 1px solid #e0e3eb;
+}
+
+th {
+    background-color: #2e3241;
+}
+
+.light-theme th {
+    background-color: #e0e3eb;
+}
+
+tr:nth-child(even) {
+    background-color: #1e2130;
+}
+
+.light-theme tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
