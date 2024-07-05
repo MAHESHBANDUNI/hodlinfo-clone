@@ -33,6 +33,7 @@ npm install
 
 4. 4. Set up environment variables:
    Create a `.env` file in the root directory and add the following:
+   
    DB_USER=your_postgres_username
    DB_PASSWORD=your_postgres_password
    DB_HOST=localhost
@@ -42,13 +43,13 @@ npm install
    
    Replace `your_postgres_username` and `your_postgres_password` with your actual PostgreSQL credentials.
 
-5. Initialize the database:
+6. Initialize the database:
 node initdb.js
 
-6. Start the server:
+7. Start the server:
 npm start
 
-7. Open your web browser and navigate to `http://localhost:3000`
+8. Open your web browser and navigate to `http://localhost:3000`
 
 ## Usage
 
